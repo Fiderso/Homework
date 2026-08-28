@@ -17,12 +17,12 @@ public class Main {
         System.out.println();
 
 
-        float numb1 = 27.12f; // Задача 2
+        double numb1 = 27.12d; // Задача 2
         long numb2 = 987678965549L;
-        double numb3 = 2.786;
+        float numb3 = 2.786f;
         short numb4 = 569;
         short numb5 = -159;
-        short numb6 = 27897;
+        int numb6 = 27897;
         byte numb7 = 67;
 
 
@@ -68,8 +68,8 @@ public class Main {
         int twobriquetteIcecream = onebriquetteIcecream * 2;
         byte oneEgg = 70;
         int fourEgg = oneEgg * 4;
-        int totalGrams = weightBananas + twohundredmlMilk + twobriquetteIcecream + fourEgg;
-        int totalKg = totalGrams / 1000;
+        float totalGrams = weightBananas + twohundredmlMilk + twobriquetteIcecream + fourEgg;
+        float totalKg = totalGrams / 1000;
         System.out.println("Общий вес завтрака: " + totalGrams + " грамм");
         System.out.println("или");
         System.out.println("Вес завтрака: " + totalKg + " килограмм");
@@ -102,9 +102,13 @@ public class Main {
         float denisRaz = denisDiff - denisSalary;
         float kristinaRaz = kristinaDiff - kristinaSalary;
 
-        System.out.println("Маша получала " + mashaSalary + " рублей. Годовой доход вырос до " + mashaDiff + " рублей, разница между годовыми доходами состовила " + mashaRaz + " рублей.");
-        System.out.println("Денис получал " + denisSalary + " рублей. Годовой доход вырос до " + denisDiff + " рублей, разница между годовыми доходами состовила " + denisRaz + " рублей.");
-        System.out.println("Кристина получала " + kristinaSalary + " рублей. Годовой доход вырос до " + kristinaDiff + " рублей, разница между годовыми доходами состовила " + kristinaRaz + " рублей.");
+        float yearMasha = mashaDiff * 12;
+        float yearDenis = denisDiff * 12;
+        float yearKristina = kristinaDiff * 12;
+
+        System.out.println("Маша получала " + mashaSalary + " рублей в месяц. Месячный доход вырос до " + mashaDiff + " рублей, разница между месячными доходами состовила " + mashaRaz + " рублей. \nПри этом общий годовой доход Маши с учетом увелечения состовляет: " + yearMasha + " рублей.");
+        System.out.println("Денис получал " + denisSalary + " рублей в месяц. Месячный доход вырос до " + denisDiff + " рублей, разница между месячными состовила доходами " + denisRaz + " рублей. \nПри этом общий годовой доход Дениса с учетом увелечения состовляет: " + yearDenis + " рублей.");
+        System.out.println("Кристина получала " + kristinaSalary + " рублей в месяц. Месячный доход вырос до " + kristinaDiff + " рублей, разница месячнами доходами состовила " + kristinaRaz + " рублей. \nПри этом общий годовой доход Кристины с учетом увелечения состовляет: " + yearKristina + " рублей.");
         System.out.println();
     }
 }
